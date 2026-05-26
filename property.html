@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Prime Property</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="listings.html">Listings</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<div class="details-container">
+  <div id="gallery">
+  <img id="mainImage" src="" alt="Property Image">
+  <div id="thumbnails" style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;"></div>
+  <h2 id="title"></h2>
+<p id="location"></p>
+<p class="price" id="price"></p>
+<p id="rooms"></p>
+<p id="description"></p>
+</div>
+  </div>
+
+  propertyCard.innerHTML = `
+  <img src="http://localhost:5000/${property.images[0]}">
+
+  <h3>${property.title}</h3>
+
+  <p>${property.location}</p>
+
+  <button onclick="deleteProperty('${property._id}')">
+    Delete
+  </button>
+`;
+
+  <h3>Contact Agent</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2022 prime Property</p>
+</footer>
+
+<script src="js/property.js"></script>
+</body>
+</html>

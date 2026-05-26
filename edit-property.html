@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Property</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Edit Property</h1>
+  <nav>
+    <a href="admin.html">Back</a>
+  </nav>
+</header>
+
+<div class="details-container">
+  <h2>Edit Listing</h2>
+
+  <form id="editForm" enctype="multipart/form-data">
+    <input type="text" id="title" placeholder="Title" required>
+
+    <select id="location" required>
+      <option value="">Select Location</option>
+      <option value="Midrand">Midrand</option>
+      <option value="Sandton">Sandton</option>
+      <option value="Pretoria">Pretoria</option>
+      <option value="Kempton Park">Kempton Park</option>
+      <option value="Germiston">Germiston</option>
+      <option value="Braamfontein">Braamfontein</option>
+      <option value="Rosebank">Rosebank</option>
+      <option value="Fourways">Fourways</option>
+      <option value="Randburg">Randburg</option>
+      <option value="suninghill">suninghill</option>
+    </select>
+
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="number" id="bedrooms" placeholder="Bedrooms" required>
+    <input type="number" id="bathrooms" placeholder="Bathrooms" required>
+
+    <textarea id="description" placeholder="Description" required></textarea>
+
+    <p><b>Upload new images (optional)</b></p>
+    <input type="file" id="images" multiple>
+
+    <button type="submit">Update Property</button>
+  </form>
+</div>
+
+<script src="js/editProperty.js"></script>
+</body>
+</html>
